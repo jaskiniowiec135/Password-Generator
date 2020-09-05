@@ -97,19 +97,19 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,459,0,0" TextWrapping="Wrap" IsReadOnly="True" FontSize="25"  Height="67" Width="300"/>
-        <Label Content="Twoje hasło:" FontSize="15" Margin="22,459,370,66"/>
         <Label x:Name="lblHeader" Content="Z czego ma się składać twoje hasło:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,50,0,0" FontSize="15"  Height="50" Width="300"/>
         <Label x:Name="lblSmallLetters" Content="Małe litery" HorizontalAlignment="Left" Margin="22,117,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
-        <Label x:Name="lblBigLetters" Content="Duże litery" HorizontalAlignment="Left" Margin="22,172,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
-        <Label x:Name="lblNumbers" Content="Cyfry" HorizontalAlignment="Left" Margin="22,227,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
-        <Label x:Name="lblSpecial" Content="Znaki specjalne" HorizontalAlignment="Left" Margin="22,277,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
         <CheckBox x:Name="chbSmallLetters" Content="" HorizontalAlignment="Left" Margin="189,117,0,0" VerticalAlignment="Top" Height="50" Width="65" Style="{DynamicResource CheckBoxStyle1}"/>
+        <Label x:Name="lblBigLetters" Content="Duże litery" HorizontalAlignment="Left" Margin="22,172,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
         <CheckBox x:Name="chbBigLetters" Content="" HorizontalAlignment="Left" Margin="189,172,0,0" VerticalAlignment="Top" Height="50" Width="65" Style="{DynamicResource CheckBoxStyle1}"/>
+        <Label x:Name="lblNumbers" Content="Cyfry" HorizontalAlignment="Left" Margin="22,227,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
         <CheckBox x:Name="chbNumbers" Content="" HorizontalAlignment="Left" Margin="189,227,0,0" VerticalAlignment="Top" Height="50" Width="65" Style="{DynamicResource CheckBoxStyle1}"/>
+        <Label x:Name="lblSpecial" Content="Znaki specjalne" HorizontalAlignment="Left" Margin="22,277,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
         <CheckBox x:Name="chbSpecials" Content="" HorizontalAlignment="Left" Margin="189,282,0,254" Width="37" Style="{DynamicResource CheckBoxStyle1}"/>
-        <Button x:Name="btnGenerate" Content="Generuj hasło" HorizontalAlignment="Left" Margin="150,397,0,0" VerticalAlignment="Top" Width="150" Height="36" Click="BtnGenerate_Click"/>
         <Label x:Name="lblNumber" Content="Liczba znaków" HorizontalAlignment="Left" Margin="22,332,0,0" VerticalAlignment="Top" FontSize="15" Height="50" Width="150"/>
         <Slider x:Name="sldLong" HorizontalAlignment="Left" Margin="189,340,0,0" VerticalAlignment="Top" Width="113" Minimum="8" Maximum="25" AutoToolTipPlacement="TopLeft"/>
-    </Grid>
+        <Button x:Name="btnGenerate" Content="Generuj hasło" HorizontalAlignment="Left" Margin="150,397,0,0" VerticalAlignment="Top" Width="150" Height="36" Click="BtnGenerate_Click"/>
+        <Label Content="Twoje hasło:" FontSize="15" Margin="22,459,370,66"/>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,459,0,0" TextWrapping="Wrap" IsReadOnly="True" FontSize="25"  Height="67" Width="300"/>
+</Grid>
 </Window>
